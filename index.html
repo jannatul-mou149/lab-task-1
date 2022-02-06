@@ -18,29 +18,22 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="header-container">
-            <div class="logo">
-                <a class="logo-link" href="index.html"><i class="fas fa-code"></i> Developer</a>
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#contact"><i class="fas fa-address-card"></i> Contact</a></li>
-                    <li><a href="#works"><i class="fas fa-laptop-code"></i> Works</a></li>
-                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
-                    <div class="last-child">
-                        <a href="#">
-                            <img src="images/" alt="" class="profile">
-                        </a>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <main>
         <!-- about section starts here -->
-        <section class="container">
+        <section class=main-container>
+            <div class="header-container">
+                <div class="logo">
+                    <a class="logo-link" href="index.html"><i class="fas fa-laptop-code"></i> Developer</a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="main-div-flex">
                 <div class="div-flex1">
                     <h1 id="home">Jannatul Ferdousi Mou</h1>
@@ -50,16 +43,12 @@
                         UI/UX
                         Designer, Programmer.I'm Pursuing BSc in Computer Science and Engineering
                         from Daffodil International University. And Currently living in Dhaka.</p>
-                    <p>For many people, working as a web designer sounds like a dream job. It's a career where you'll
-                        get to
-                        show off your passion and creativity—and get paid well for doing so! But becoming a web designer
-                        requires an array of skills.</p>
                     <br>
                     <a href="" class="btn-grad">Hire Me <i class="fas fa-angle-double-right"></i></a>
                     <br>
                 </div>
                 <div class="div-flex2">
-                    <img src="images//3yyGXmNcFkIe.gif" alt="" height="450" width="420">
+                    <img src="images/601-removebg-preview.png" alt="" height="500" width="550">
                 </div>
             </div>
         </section>
@@ -119,7 +108,7 @@
             <div class="flex-mission-item">
                 <div class="my-mission-item" id="mission">
                     <img src="images/illustrator-1.png" alt="" height="250" width="280">
-                    <h2>Website Development <i class="fas fa-rocket"></i></h2>
+                    <h2>Website Development </h2>
                     <p>Empower my clients to respond faster and more intuitively to changing market dynamics.Enable
                         myself to
                         become more agile and competitive through leveraging new technologies.My desire to bring
@@ -129,7 +118,7 @@
                 </div>
                 <div class="my-mission-item" id="vission">
                     <img src="images/illustrator-2.png" alt="" height="250" width="280">
-                    <h2>Responsive Degisn <i class="far fa-eye"></i></h2>
+                    <h2>Responsive Degisn</h2>
                     <p>My vision is to be the web developer. Focused on constant
                         innovation as my key for achieving the ultimate goal of success and emerge as globally
                         recognized
@@ -140,7 +129,7 @@
                 </div>
                 <div class="my-mission-item" id="goals">
                     <img src="images/illustrator-3.png" alt="" height="250" width="280">
-                    <h2>24x7 Support <i class="fas fa-chart-line"></i></h2>
+                    <h2>24x7 Support </h2>
                     <p>As a Web developer,I'm able to design Web pages that can effectively display
                         material,
                         provide interactivity, and be artistically pleasing to the user. I exactly
@@ -149,6 +138,41 @@
                         be
                         used.
                     </p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h1>Visit Us</h1>
+            <div class="visitUs">
+                <div class="appointment">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+                <div class="mapouter gmap_canvas">
+                    <iframe width="700" height="600" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Shoniakhra%20Dhaka-1236&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                 </div>
             </div>
         </section>
