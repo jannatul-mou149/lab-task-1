@@ -1,38 +1,265 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&display=swap');
-.container{
+/* ----fonts ----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles or utilities*/
+body{
+    margin: 0;
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     max-width: 1200 px;
-    margin: 5px;
-    padding: 30px;
-}
-#logo-img{
-    width: 70px; height: 70px;
-}
-.hire-button{
-    text-decoration: none;
-    background-image: linear-gradient(dodgerblue , royalblue);
-    color: white;
-    font-weight: 600;
-    padding: 5px 30px;
-    border-radius: 20px;
-    transition-duration: 0.4s;
-}
-.hire-button:hover{
+    /* background-image: url(images/image-from-rawpixel-id-2456896-jpeg.jpg); */
+    background-repeat:repeat-y;
+    background-size: cover;
 
-    background-image: linear-gradient(rgb(52, 106, 160),rgb(69, 98, 184));
-    color: white ;
 }
-table, th , td{
-    width: 40%;
-    padding: 15px;
+main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border: 1px solid black;
 }
+h1{
+    font-size: 40px;
+    color:#3A6073;
+}
+h3{
+    font-size: 30px;
+    color:#3A6073;
+}
+.container{
+    /* background-color: white; */
+    border-radius: 5px;
+    width: 1200px;
+    padding: 30px;
+    margin-top: 21px;
+    /* height: 679px; */
+}/* -------navigation bar styling------- */
+#header{
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+    background-size: 200% auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    transition: 0.9s;
+}
+#header:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.logo-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+    border-bottom: 3px solid #3a607300;
+    transition: .5s all ease;
+}
+.logo-link:hover{
+    border-bottom: 3px solid #fff;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 36px;
+    border-bottom: 3px solid #3a607300;
+    transition: .5s all ease;
+}
+.navbar ul .last-child{
+    margin-right: 0;
+}
+.last-child img{
+    position: relative;
+    top: 4px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.navbar ul li:hover{
+    border-bottom: 3px solid #fff;
+}
+/* ------------button styling----------- */
 a{
     text-decoration: none;
     color: black;
 }
+.btn-grad {
+   background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+   width: 150px;
+   margin: 10px;
+   padding: 15px 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ /* main part flex */
+ .main-div-flex{
+     display: flex;
+ }
+ .div-flex2 img{
+     border-radius: 50%;
+ }
+ /* table styling */
+ table {
+    border-collapse: collapse;
+    width: 90%;
+ }
+  th, td {
+    text-align: left;
+    padding: 25px;
+  }
+  
+  tr:nth-child(even) {
+      background-color:#445e6b46;
+  }
+  tr:nth-child(odd) {
+      background-color:#5f747c41;
+  }
+/* skill and experiences styling */
+.flex-main-div{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+}
+.style-div{
+    width: 100%;
+    text-align: justify;
+    justify-content: space-between;
+    box-shadow: 10px 10px 20px 2px gray;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px;
+    border-left: 7px solid ;
+    border-image: linear-gradient(#153a53 , #7492a0) ;
+    border-image-slice: 1;
+    transition: 0.4s;
+}
+.style-div:hover{
+    background-image: linear-gradient( #16222A 0%, #3A6073  51%, #16222A  100%);
+    transform: scale(1.1);
+    transition:all 0.5s ease-in-out;
+    color: white ;
+}
+/* ------------my mission section styling ---------*/
+.flex-mission-item{
+    display: flex;
+}
+.my-mission-item{
+    margin: 2%;
+    padding: 30px;
+    border-radius: 30px; 
+}
+.my-mission-item:hover{
+    transform: scale(1.1);
+    transition:all 0.5s ease-in-out;
+}
+#mission{
+    background-image: linear-gradient(#16222A 0%, #3A6073  51%, #16222A  100%);
+    color: white;
+}
+#vission{
+    background-image: linear-gradient(#16222A 0%, #3A6073  51%, #16222A  100%);
+    color: white;
+    position: relative;
+    top: -40px;
+}
+#goals{
+    background-image: linear-gradient(#16222A 0%, #3A6073  51%, #16222A  100%);
+    color: white;
+}
+/* ---------icon styling -----------*/
+.fas{
+    color: #2e6f8f;
+    font-size: 25px;
+}
+.fab{
+    color: #2e6f8f;
+    font-size: 25px;
+}
+.fa-angle-double-right{
+    color: #fff;
+    font-size: 18px;
+}
+.fa-home{
+    color: #fff;
+}
+.fa-laptop-code{
+    color: #fff;
+}
+.fa-address-card{
+    color: #fff;
+}
+.fa-code{
+    color:white;
+    font-size: 30px;
+    padding-right: 5px;
+}
+.fa-rocket{
+    color: #fff;
+}
+.fa-chart-line{
+    color:#fff;
+}
+.fa-concierge-bell{
+    color: #fff ;
+}
+.fa-facebook{
+    color: white;
+}
+.fa-facebook-messenger{
+    color: white;
+}
+.fa-twitter-square{
+    color: white;
+}
+.fa-youtube{
+    color: white;
+}
 footer{
+    background-image: linear-gradient(#16222A 0%, #3A6073  51%, #16222A  100%);;
     text-align: center;
-    color: dimgray;
+    color: #fff;
+    padding: 5%;
+}
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .header-container{
+        padding: 0 2%;
+    }
+    .navbar ul li{
+        margin-right: 5px;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
 }
