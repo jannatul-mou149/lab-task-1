@@ -79,7 +79,7 @@ a{
     color: purple;
 }
 .btn-grad {
-   background-image: linear-gradient(to right, purple 0%, rgb(160, 104, 160)  51%, #2e1b31  100%);
+   background-image: linear-gradient(to right, purple 0%, rgb(245, 136, 245)  51%, #8c10a0  100%);
    width: 150px;
    margin: 10px;
    padding: 15px 10px;
@@ -153,7 +153,7 @@ a{
     transition: 0.4s;
 }
 .style-div:hover{
-    background-image: linear-gradient(rgb(228, 207, 228) 0%, rgb(160, 104, 160)  51%, #773681  100%);
+    background-image: linear-gradient(rgb(240, 185, 240) 0%, rgb(189, 116, 189)  51%, #720d81  100%);
     transform: scale(1.1);
     transition:all 0.5s ease-in-out;
     color: white ;
@@ -172,17 +172,17 @@ a{
     transition:all 0.5s ease-in-out;
 }
 #mission{
-    background-color:rgba(245, 245, 245, 0.534);
+    background-color:rgba(248, 153, 248, 0.103);
     color: purple;
 }
 #vission{
-    background-color:rgba(245, 245, 245, 0.534);
+    background-color:rgba(248, 153, 248, 0.103);
     color: purple;
     position: relative;
     top: -40px;
 }
 #goals{
-    background-color:rgba(245, 245, 245, 0.534);
+    background-color:rgba(248, 153, 248, 0.103);
     color: purple;
 }
 /* ---------icon styling -----------*/
@@ -220,12 +220,6 @@ a{
 .fa-youtube{
     color: white;
 }
-footer{
-    background-color: rgba(137, 43, 226, 0.76);
-    text-align: center;
-    color: #fff;
-    padding: 5%;
-}
 /* Visit us section styling */
 .visitUs{
     display: flex;
@@ -235,14 +229,17 @@ footer{
     text-align: right;
 }
 .gmap_canvas {
-    width: 70%;
-    /* overflow: hidden; */
+    overflow: hidden;
     background: none !important;
-    padding-right: 20px;
+   
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
 }
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -252,7 +249,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: purple;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -267,23 +264,11 @@ input[type=text], select, textarea {
   .appointment {
     width: 30%;
     height: 640px;
-    border-radius: 5px;
-    /* background-color: #f2f2f2; */
-    padding: 30px;
+    padding: 0 50px;
   }
-@media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
-    }
-    .header-container{
-        padding: 0 2%;
-    }
-    .navbar ul li{
-        margin-right: 5px;
-    }
-}
-@media only screen and (min-width:688px) and (max-width:992px) {
-    .container{
-        width: 100%;
-    }
+  footer{
+    background-color: rgba(128, 0, 128, 0.897);
+    text-align: center;
+    color: #fff;
+    padding: 5%;
 }
